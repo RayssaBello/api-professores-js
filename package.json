@@ -1,0 +1,17 @@
+{
+  "name": "api-professores-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "ray",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "start \"node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1"
+  }
+}

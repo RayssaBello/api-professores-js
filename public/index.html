@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Professores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 6px;
+            width: 250px;
+        }
+
+        button {
+            padding: 6px 10px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário de Professor</h1>
+
+    <form id="formProfessor" onsubmit="event.preventDefault();">
+        <input type="text" id="drt" placeholder="DRT">
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="setor" placeholder="Setor">
+
+        <button type="button" onclick="cadastrar()">Cadastrar</button>
+        <button type="button" onclick="listar()">Listar</button>
+        <button type="button" onclick="editar()">Editar</button>
+        <button type="button" onclick="excluir()">Excluir</button>
+    </form>
+
+    <h2>Professores Cadastrados</h2>
+    <ul id="lista"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
